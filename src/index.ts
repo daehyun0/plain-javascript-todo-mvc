@@ -1,6 +1,6 @@
-import PageTodoMainView from './view/page/todo-main';
-import PageTodoEditView from './view/page/todo-edit';
-import PageTodoAddView from './view/page/todo-add';
+import PageTodoMainView from './view/page/todo-main.js';
+import PageTodoEditView from './view/page/todo-edit.js';
+import PageTodoAddView from './view/page/todo-add.js';
 
 (function main () {
     const pageTodoMainView = new PageTodoMainView();
