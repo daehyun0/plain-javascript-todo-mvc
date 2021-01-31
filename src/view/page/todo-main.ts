@@ -2,11 +2,23 @@ import BaseView from '../base-view.js';
 import TodoItem from '../../model/todo.js';
 
 export default class PageTodoMainView extends BaseView {
-    todoItem:TodoItem;
+    todoList:Array<TodoItem>;
     
     constructor () {
         super();
-        this.todoItem = new TodoItem('title', 'content', new Date());
+        this.todoList = [
+            new TodoItem('title1', 'content1', new Date()),
+            new TodoItem('title2', 'content2', new Date()),
+            new TodoItem('title3', 'content3', new Date()),
+            new TodoItem('title4', 'content4', new Date()),
+            new TodoItem('title5', 'content5', new Date()),
+            new TodoItem('title6', 'content6', new Date()),
+            new TodoItem('title7', 'content7', new Date()),
+            new TodoItem('title8', 'content8', new Date()),
+            new TodoItem('title9', 'content9', new Date()),
+            new TodoItem('title10', 'content10', new Date()),
+            new TodoItem('title11', 'content11', new Date())
+        ];
     }
 
     render () {
