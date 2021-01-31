@@ -5,7 +5,7 @@ export default class BaseView {
         this.constructorName = this.constructor.name;
     }
 
-    render() {
+    getHTMLElement () {
         throw new Error("not implemented render method: " + this.constructorName);
     }
 }

@@ -8,7 +8,7 @@ export default class TodoItemView extends BaseView {
         this.todoItem = todoItem;
     }
     
-    render () {
+    getHTMLElement () {
         const todoItemHtmlElem = document.createElement('div');
         todoItemHtmlElem.classList.add('todo-item');
         todoItemHtmlElem.classList.add('p-4');

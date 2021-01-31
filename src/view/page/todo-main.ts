@@ -21,7 +21,7 @@ export default class PageTodoMainView extends BaseView {
         ];
     }
 
-    render () {
+    getHTMLElement () {
         const pageFragment = document.createDocumentFragment();
         
         const header = document.createElement('header');
@@ -42,7 +42,7 @@ export default class PageTodoMainView extends BaseView {
         main.classList.add('px-5');
 
         for (const todoItem of this.todoList) {
-            const element = new TodoItemView(todoItem).render();
+            const element = new TodoItemView(todoItem).getHTMLElement();
             main.appendChild(element);
         }
         // main end
