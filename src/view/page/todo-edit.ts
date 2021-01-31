@@ -1,6 +1,6 @@
 import BaseView from '../base-view.js';
 
-export default class TodoEditView extends BaseView {
+export default class PageTodoEditView extends BaseView {
     constructor () {
         super();
     }

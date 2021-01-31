@@ -1,4 +1,4 @@
 import BaseView from '../base-view.js';
 
-export default class TodoItemView extends BaseView {
+export default class PageTodoItemView extends BaseView {
 }
