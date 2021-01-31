@@ -6,4 +6,6 @@ import PageTodoAddView from './view/page/todo-add.js';
     const pageTodoMainView = new PageTodoMainView();
     const pageTodoEditView = new PageTodoEditView();
     const pageTodoAddView = new PageTodoAddView();
+
+    pageTodoMainView.render();
 })();
