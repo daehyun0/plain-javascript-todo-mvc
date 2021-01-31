@@ -22,9 +22,10 @@ export default class TodoItemView extends BaseView {
             <p class="title h2 mb-0">${this.todoItem.title}</p>
             <p class="content lead mb-0 mt-1">${this.todoItem.content}</p>
         </div>
-        <div class="button-group">
+        <div class="btn-group" role="group">
             <button type="button" class="btn btn-danger">삭제</button>
             <button type="button" class="btn btn-secondary">수정</button>
+            <button type="button" class="btn btn-success">완료</button>
         </div>`;
 
         return todoItemHtmlElem;
