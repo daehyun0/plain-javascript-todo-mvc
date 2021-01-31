@@ -1,0 +1,9 @@
+#app {
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+}
