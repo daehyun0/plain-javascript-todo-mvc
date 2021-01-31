@@ -1,23 +1,23 @@
 import BaseView from '../base-view.js';
 import TodoItem from '../../model/todo.js';
-
+import TodoItemView from '../component/todo-item.js';
 export default class PageTodoMainView extends BaseView {
     todoList:Array<TodoItem>;
     
     constructor () {
         super();
         this.todoList = [
-            new TodoItem('title1', 'content1', new Date()),
-            new TodoItem('title2', 'content2', new Date()),
-            new TodoItem('title3', 'content3', new Date()),
-            new TodoItem('title4', 'content4', new Date()),
-            new TodoItem('title5', 'content5', new Date()),
-            new TodoItem('title6', 'content6', new Date()),
-            new TodoItem('title7', 'content7', new Date()),
-            new TodoItem('title8', 'content8', new Date()),
-            new TodoItem('title9', 'content9', new Date()),
-            new TodoItem('title10', 'content10', new Date()),
-            new TodoItem('title11', 'content11', new Date())
+            new TodoItem('todo Title1', 'content1', new Date()),
+            new TodoItem('todo Title2', 'content2', new Date()),
+            new TodoItem('todo Title3', 'content3', new Date()),
+            new TodoItem('todo Title4', 'content4', new Date()),
+            new TodoItem('todo Title5', 'content5', new Date()),
+            new TodoItem('todo Title6', 'content6', new Date()),
+            new TodoItem('todo Title7', 'content7', new Date()),
+            new TodoItem('todo Title8', 'content8', new Date()),
+            new TodoItem('todo Title9', 'content9', new Date()),
+            new TodoItem('todo Title10', 'content10', new Date()),
+            new TodoItem('todo Title11', 'content11', new Date())
         ];
     }
 
@@ -41,7 +41,10 @@ export default class PageTodoMainView extends BaseView {
         main.classList.add('pl-5');
         main.classList.add('px-5');
 
-        main.innerHTML = `<div>asdfasd</div>`
+        for (const todoItem of this.todoList) {
+            const element = new TodoItemView(todoItem).render();
+            main.appendChild(element);
+        }
         // main end
 
         // footer start 

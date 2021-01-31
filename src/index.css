@@ -1,9 +1,15 @@
 #app {
     position: relative;
+    background-color: #F5F5F5;
 }
 
 footer {
+    background-color: #F5F5F5;
     width: 100%;
     position: absolute;
     top: 100%;
+}
+
+.todo-item + .todo-item {
+    margin-top: 36px;
 }
